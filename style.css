@@ -110,6 +110,8 @@ background: #ddd;
   bottom: 0;
   padding: 0px;
   border: 1px solid #ccc; 
+  opacity:0;
+  transition: opacity 400ms ease-out;
 }
 [type=radio]:checked ~ label { 
   background: white;
