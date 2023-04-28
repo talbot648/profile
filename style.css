@@ -118,6 +118,8 @@ background: #ddd;
 }
 [type=radio]:checked ~ label ~ .content {
   z-index: 1;
+  opacity: 1;
+  transition: opacity 400ms ease-out;
 }
 /* Notes on radio: It is used when multiple choices are available but only one is needed. Similar to checkboxes.
 4 attributes - Type: it defines the input type control and will set it to the radio.
