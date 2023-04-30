@@ -163,8 +163,17 @@ img:hover {
   margin-left: 1px; 
   position: relative;
   left: 1px; 
-  
 }
+
+.tab label:hover{
+background-color: #000000;
+color: #ff0000;
+opacity: 0.5;
+transition: opacity 200ms ease-out;
+
+
+}
+
 .tab [type=radio] {
   display: none;   
 }
@@ -172,7 +181,7 @@ img:hover {
   position: absolute;
   top: 0px;
   left: 0;
-  background: white;
+  background: rgb(0, 0, 0);
   right: 0;
   bottom: 0;
   padding: 0px;
@@ -181,10 +190,12 @@ img:hover {
   transition: opacity 400ms ease-out;
 }
 [type=radio]:checked ~ label { 
-  background: white;
+  background: black;
   border-bottom: 1px solid white;
   z-index: 2;
+  color: #ff0000;
 }
+
 [type=radio]:checked ~ label ~ .content {
   z-index: 1;
   opacity: 1;
