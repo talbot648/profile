@@ -21,7 +21,7 @@
   
 }
 
-.background{
+.backpic{
   width: 2000px;
   height: 2000px;
   background-image: url("https://th.bing.com/th/id/OIP.EhFgdU2ozfg7ZqLppSUNagHaEe?w=271&h=180&c=7&r=0&o=5&pid=1.7");
@@ -31,6 +31,10 @@
   background-repeat:inherit;
 }
 
+.background{
+  background: radial-gradient(#434343, #000000);
+  background-size: 100%;
+}
 
 table {
     margin-top: 100px;
@@ -105,6 +109,7 @@ color: #ff0000;
   text-align: center;
   background: #000000;
   color: #ff0000;
+  
   }
   
 
@@ -120,13 +125,12 @@ color: #ff0000;
 .main {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: #424141;
+  background: radial-gradient(#434343, #000000);
   padding: 20px;
   color: #eee;
 }
 
 .textcol{
-
   color: #eee;
 }
 
