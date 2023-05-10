@@ -97,20 +97,17 @@ color: rgb(255, 0, 0);
 }
 
 .footer {
-padding: 20px;
+
+left: 0;
+bottom: 0;
+width: 100%;
+position: fixed;
 text-align: center;
 background: #000000;
 color: #ff0000;
 }
 
-.footerc {
-  margin-top: 530px;
-  padding: 20px;
-  text-align: center;
-  background: #000000;
-  color: #ff0000;
-  
-  }
+
   
 
 
@@ -146,8 +143,7 @@ img:hover {
 }
 
 .links {
-  padding-left: 13%;
-  padding-right: 8%;
+padding: 0%;
 }
 
 
@@ -176,6 +172,12 @@ opacity: 0.5;
 transition: opacity 200ms ease-out;
 
 
+}
+
+
+.secondtab{
+
+  padding-top: 300px ;
 }
 
 .tab [type=radio] {
