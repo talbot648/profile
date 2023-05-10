@@ -317,7 +317,7 @@
                             <td>To make our lives easier, we can use the short assignment operator := which is shorthand for both declaration and initialising.<br>
                                 It is useful when you don't want to fill up your code with "Var .... int/string" 
                             </td>
-                            <td>Example of code in Go that counts to 10
+                            <td>Example of code in Go that counts to 10<br>
                                 package main<br>
                                 <br>
                                 import "fmt"<br>
@@ -382,12 +382,13 @@
                                     import "testing"<br>
                                     <br>
                                     func TestHello(t *testing.T) { <br>
-                                        got := Hello() <br>
-                                        want := "Hello, world" <br>
-                                        if got != want { <br>
-                                            t.Errorf("got %q want %q", got, want) <br>
-                                        }
+                                        t.Run ("saying hello to people", func(t *testing.T) { <br>
+                                        got := Hello("Chris","") <br>
+                                        want := "Hello, Chris" <br>
+                                        assertCorrectMessage(t, got, want) <br>
+                                        }) <br>
                                     }
+                                    
                                     </td>
                                 
                             </tr>
