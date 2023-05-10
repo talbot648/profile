@@ -343,10 +343,58 @@
                         </tr>
                             </td>
                         </tr>
+
+                        
                     </table>
                     </div> 
                     </div>
-            
+                    <div class="tab">
+                        <input type="radio" id="tab-7" name="tab-group-1">
+                        <label for="tab-7"><b>GO Test</B></label>
+                 
+                     <div class="content">
+                        <table>
+                            <tr>
+                                <th>Why we automate testing of code</th>
+                                <th>Example of go test and how to execute it</th>
+                               
+                            </tr>
+                            <tr>
+                                <td>Firstly, automating the testing of code allows you to stay in a flow state and save time by<br>
+                                    not needing to manually test each section of code.<br>
+                                    Another benefit of automating testing is if you have a large piece of code with a wide variety of <br>
+                                    potential outcomes it saves so much time. </td>
+                                 <td> package main <br>
+                                    import "testing"<br>
+                                    <br>
+                                    func TestHello(t *testing.T) { <br>
+                                        got := Hello() <br>
+                                        want := "Hello, world" <br>
+                                        if got != want { <br>
+                                            t.Errorf("got %q want %q", got, want) <br
+                                        }
+                                    }
+                                    </td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Another reason why we automate testing is that the test will actuslly tell you what line went wrong<br>
+                                    and what was expected. This speeds up time taken to fix an error. Also if you are working with a team <br>
+                                    it helps everyone see that the code they're interacting with works as exected.
+                                </td>
+                                <td>To exectute the code, make a new terminal in command line. Then type in go test . and this will test the <br>
+                                    code. If the test is successul, the test will output pass. If it fails then then the code will say fail, which <br>
+                                    line failed, what the expected output was and what the actual output was.  </td>
+                                
+                            </tr>
+                                </td>
+                            </tr>
+    
+                            
+                        </table>
+                        </div> 
+                        </div>
             </div>
             </div>
 
