@@ -31,6 +31,17 @@
   background-repeat:inherit;
 }
 
+code {
+  background-color: black;
+  color: green;
+  font-family: monospace;
+  display: block;
+  width: 80%;
+  margin: 10%;
+  text-align: left;
+  padding-left: 1rem;
+}
+
 
 .background{
   background: radial-gradient(#434343, #000000);
@@ -52,8 +63,7 @@ tr {
 
 
 th, td {
-    border: 3px solid rgb(7, 7, 7);
-
+   border: 3px solid rgb(7, 7, 7);
 }
 
 
@@ -189,7 +199,6 @@ transition: opacity 200ms ease-out;
   right: 0;
   bottom: 0;
   padding: 0px;
-  border: 1px solid #ccc; 
   opacity:0;
   transition: opacity 400ms ease-out;
 }
