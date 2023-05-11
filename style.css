@@ -46,13 +46,13 @@ table {
     }
 
 tr {
-    border: 1px solid gray;
+    border: 3px solid black;
 
 }
 
 
 th, td {
-    border: 1px solid grey;
+    border: 3px solid black;
 
 }
 
