@@ -40,7 +40,7 @@ code {
   margin: 10%;
   text-align: left;
   padding-left: 1rem;
-  margin-right: 20%;
+
 }
 
 
@@ -117,8 +117,20 @@ height: 80px;
 padding-top: 20px;
 position: fixed;
 text-align: center;
-background: #000000;
-color: #ff0000;
+animation-name: footer;
+  animation-duration: 3s;
+  animation-fill-mode:both;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  color: black;
+
+}
+
+@keyframes footer {
+  from {background-color: #6e0000;}
+  to {background-color: #000000;}
+  
 }
 
 .container {
