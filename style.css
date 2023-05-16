@@ -1,7 +1,7 @@
 
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
-
+/*animation for my class*/
 .my-class {
   animation-name: red;
   animation-duration: 1s;
@@ -21,15 +21,7 @@
   
 }
 
-.backpic{
-  width: 2000px;
-  height: 2000px;
-  background-image: url("https://th.bing.com/th/id/OIP.EhFgdU2ozfg7ZqLppSUNagHaEe?w=271&h=180&c=7&r=0&o=5&pid=1.7");
-  animation-name: example;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  background-repeat:inherit;
-}
+/*green and black style for cheatsheet page*/
 
 code {
   background-color: black;
@@ -43,12 +35,13 @@ code {
 
 }
 
-
+/* background for all pages*/
 .background{
   background: radial-gradient(#434343, #000000);
   background-size:auto
 }
 
+/*styles my tables on cheatsheet*/
 table {
     margin-top: 100px;
     width:100%;
@@ -68,7 +61,7 @@ th, td {
 }
 
 
-
+/*styling for navbar when idle*/
 .navbar {
 overflow: hidden;
 overflow-y: scroll;
@@ -108,8 +101,8 @@ background-color: #080808;
 color: rgb(255, 0, 0);
 }
 
+/*Styling for footer*/
 .footer {
-
 left: 0;
 bottom: 0;
 width: 100%;
@@ -127,22 +120,23 @@ animation-name: footer;
 
 }
 
+/*Changes colour of footer animation*/
 @keyframes footer {
   from {background-color: #6e0000;}
   to {background-color: #000000;}
   
 }
 
+/*creates slot for footer at bottom of page*/
 .container {
 width: 100%;
 height: 750px;
-
 }
 
+/*images for cheasheet sizing*/
 #tableimg {
   width: 300px;
 }
-
 
 
 
@@ -167,15 +161,18 @@ height: 750px;
 padding: 0%;
 }
 
-
+/*classs of tabs so they are in line*/
 .tabs {
   position: relative;    
   clear: both;
 
+ /*individual tab styling so it is to the left side of screen*/
 }
 .tab {
   float: left;
   margin-top: 75px;
+
+/*text in tabs*/
 }
 .tab label {
   background: #eee; 
@@ -186,24 +183,20 @@ padding: 0%;
   left: 1px; 
 }
 
+/*animation when you hover over the tab*/
 .tab label:hover{
 background-color: #000000;
 color: #ff0000;
 opacity: 0.5;
 transition: opacity 200ms ease-out;
-
-
 }
 
 
-.secondtab{
-
-  padding-top: 300px ;
-}
 
 .tab [type=radio] {
   display: none;   
 }
+
 .content {
   position: absolute;
   top: 0px;
@@ -215,6 +208,7 @@ transition: opacity 200ms ease-out;
   opacity:0;
   transition: opacity 400ms ease-out;
 }
+/*When tab is clicked the specific table linked with the tab floats to the top*/
 [type=radio]:checked ~ label { 
   background: black;
   border-bottom: 1px solid white;
@@ -228,3 +222,45 @@ transition: opacity 200ms ease-out;
   transition: opacity 400ms ease-out;
 }
 
+/*styles the item card in the shop*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  color: #ccc;
+  float: left;
+  padding: 20px;
+}
+
+/*styles the price section in the shop*/
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card img{
+  height: 200px;
+  width: 200px;
+}
+/*buy button styling when not hovering*/
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: red;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*changes opacity when hovering on buy*/
+.card button:hover {
+  opacity: 0.7;
+  color: white;
+  background-color: red
+}
